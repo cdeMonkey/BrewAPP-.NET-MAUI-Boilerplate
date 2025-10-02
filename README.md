@@ -12,12 +12,12 @@ This document outlines the recommended architecture for a scalable, modular, and
 | Layer            | Technology                                                                 |
 |------------------|-----------------------------------------------------------------------------|
 | **Frontend**      | .NET MAUI Blazor Hybrid                                                    |
-| **API Layer**     | ASP.NET Core Web API (Minimal API or Controllers)                         |
+| **API Layer**     | ASP.NET Core Web API                      |
 | **Authentication**| ASP.NET Core Identity + JWT / OAuth 2.0                                   |
-| **Database**      | PostgreSQL or SQL Server (for relational data) + Redis (for caching)      |
+| **Database**      | SQL Server (for relational data) + Redis (for caching)      |
 | **File Storage**  | Azure Blob Storage or AWS S3                                               |
 | **Search**        | Elasticsearch *(optional for advanced fuzzy search)*                      |
 | **Queueing**      | RabbitMQ or Azure Service Bus *(email, moderation, background jobs)*      |
-| **Hosting**       | Azure App Service, AWS ECS/Fargate, or Kubernetes                         |
+| **Hosting**       | Azure App Service                        |
 | **CDN**           | Cloudflare or AWS CloudFront *(for media acceleration)*                   |
-| **Monitoring**    | Serilog + Seq, or Azure Application Insights                              |
+| **Monitoring**    | Serilog + Seq, Azure Application Insights                              |
